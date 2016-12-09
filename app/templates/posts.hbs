@@ -3,6 +3,8 @@
     <div class="posts-left-search">
       <input
         class='posts-search-field'
+        value={{search}}
+        onInput={{action 'search' value='target.value'}}
         type='search'
         placeholder='🔎 Search'/>
     </div>
