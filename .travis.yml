@@ -4,8 +4,8 @@ node_js:
 sudo: false
 cache:
   directories:
-  - "$HOME/.npm"
-  - "$HOME/.cache"
+  - $HOME/.npm
+  - $HOME/.cache
 before_install:
 - npm config set spin false
 - npm install -g bower
@@ -18,9 +18,5 @@ install:
 script:
 - npm test
 deploy:
-  provider: heroku
   api_key:
-    secure: K7qUaW/KkNMNEjZrEcZa1/TIpS2LKpKi1SroBpZzEs5eNtyXtoElbjUXgIbSt1evpBWbssYQC2fZLShX8K/Vio4LPrheuQuxK1yW3Iyza8EU2amK16T74RFPV6oHsWYB3XuGebUiOZioaBcnk/TNLiGeuv+RWhkXjelUu4toyMl6hZMyukcUZLIouYU3yKMUyDmSIxf/eWCvP/IT3Jffq1jdbHsFBk36p26eqHMsBfOjBzkDKpMmanvCSxhaXcB9GmEc7zXPLzawUYpNzASnCjvv+5MDWeXPUietQ/2UtvBnIlFQxkH84gV0aDPJ4fD/gy31dfMnQitmSKyAiuRzqrsuhysiQQP3r3iDz6qmBlVCs9EIn6W6a7MduWDORTr/PfdZKj5dXI2GWlhEAMiN9wdYZLxHYZMamnJXMvHRTaSJyIgA2nGrbC/gPv7fjyle1taFyrCIuWMWGac6IElu67DgRpXiR5EaWmQSVxnU+B4Y1iPT4zYShF7dnzOyln/sykRvPAsEfMj/ON2IE+w0OcdIsMyfFctyWbWIJxtMUs1xy5Mq2zrXPofdrHCtua4WOua+ys3/Q40nGyiEhH44dwrPVHsF+GOsNrUPQl9X0/HZkHZQEnmM1xW/zxmzquQjmgOHN1MZp/oeOadZLCCpLXX7ls9VhIe5UmAB7rrrfFA=
-  app: fem-commently
-  on:
-    repo: FrontendMasters/ember-commently
+    secure: fmTr6LUkx0K6YolhpoWoDHieZuygGKv60h+DzhVMNg72mH08mqC7JfKVnTF8UZiLKaanSjHd3VUBCQjhAif7XWpYRpWS1pLbwXAwD+PdMDD3ddwoDw/2IFgwAWvXzi6OBBHsx6oa1BZJqdnYp5yZ0L2rpuH42U+COcWkyrvV4aFO/HjiR1pfVXhd+Kt47Az2DQpqRad5nuwD7touJJV8xrEDr7lY7SzVHH4dJiym3S2UueXnpA5xs90wP9TCwm1gQYFndDYiHejjtCYCMI+SbiEGibALn8fZM6/YSCvmsO9fD9IqnHJM1bl3WdJfbpRwCQ4yIaGeQsNPpBCqkNPJ7ubuZRVKMsZMzcQemc7ytEE3jJJmcm8o9MYqULXA2Xy2a1ElUFHVlIlHQmg7uFrYczhHIFOh6EUaqhPZPAy/vkKpl5icdwUYC6sHNswej0uUEmSCmfrV7rYAtbho1hL41jUOSz7USTvpTGALXN/RlimOci7XULNOIkTwRsTq1PRdGwexDeqS6S7uMv1PemgKIx8rqyAheujuO80QQ0oM8+VsXPhC3U1sgvf3TRpCBJ+5AVRfF7NRFSsYe0x2NQFYSeIzMVBRznYdawZMa94qzj4mKXAfJAvgWrg9ddR3ILKEsBaTC+mRHxixu2qqodmna0smJKopkC6F1ZBeKH05zUc=
